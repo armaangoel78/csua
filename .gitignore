@@ -1,0 +1,4 @@
+.env
+dist
+csuayyy.egg-info
+__pycache__
