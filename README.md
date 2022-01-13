@@ -11,7 +11,9 @@ Its 4x faster than doing it manually!
 
 ## Installation
 
-PyPi installation comming soon!
+```
+pip install csuayyy
+```
 
 ## Tutorial
 
@@ -26,7 +28,7 @@ All commands start with either `csuayyy` or `csua` for short.
 CSUA is Berkeley's student-run high-performance computing cluster, perfect for training machine learning models ~or mining cryptocurrency~. 
 However, it should be simple to run on other server setups! 
 
-This project is currentlly only tested on Mac OS 12.21. Other operating systems and configurations are currently untested.
+This project is currentlly only tested on Mac OS 12.1. Other operating systems and configurations are currently untested.
 
 Feel free to drop an issue if you need help setting up for a non-CSUA server, or CSUA is not working for your system.
 

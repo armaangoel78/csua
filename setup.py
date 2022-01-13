@@ -1,18 +1,25 @@
 import setuptools
 
+from pathlib import Path
+
 setuptools.setup(
-    name="csuayyy",                     # This is the name of the package
-    version="0.0.3",                        # The release version
-    author="Armaan Goel",                     # Full name of the author
+    name="csuayyy",
+    version="0.0.7",
+    author="Armaan Goel",
     author_email="armaangoel78@gmail.com",
     description="CLI for easily interfacing with Berkeley CSUA",
-    packages=setuptools.find_packages(),    # List of all python modules to be installed     
+    long_description=(Path(__file__).parent / "README.md").read_text(),
+    long_description_content_type='text/markdown',
+    project_urls={
+        'Github': 'https://github.com/armaangoel78/csua/',
+    },
+    packages=setuptools.find_packages(),
     entry_points={
         'console_scripts': [
     		'csuayyy=csuayyy.src.main:main',
     		'csua=csuayyy.src.main:main'
     	]
-    },                               
-    python_requires='>=3.6',                # Minimum version requirement of the package
-    install_requires=['pexpect', 'termcolor']                     # Install other dependencies if any
+    },        
+    python_requires='>=3.6',
+    install_requires=['pexpect', 'termcolor']
 )
